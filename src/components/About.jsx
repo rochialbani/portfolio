@@ -1,9 +1,8 @@
 import React from "react";
 
-
 const About = () => {
     return (
-        <div className="w-full md:h-screen p-2 flex items-center py-16">
+        <div id='about' className="w-full md:h-screen p-2 flex items-center py-16">
             <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
                 <div className="col-span-2">
                     <p className="uppercase text-xl tracking-widest text-[#9e8d75]">About</p>
@@ -26,7 +25,7 @@ const About = () => {
                         developement and various front-end technologies.</p>
                 </div>
                 <div className="w-full h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-                    <img className="rounded-xl" src="https://img.freepik.com/foto-gratis/rostro-mujer-perfil_186202-192.jpg?w=2000" alt="/"/>
+                    <img className="rounded-xl" src="assets/profile/imgperfil.jpg" alt="profile"/>
                 </div>
             </div>
         </div>
