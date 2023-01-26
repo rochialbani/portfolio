@@ -30,17 +30,17 @@ const Navbar = () =>{
             <h4 className="font-playfair text-3xl font-bold"><a href="/#main">RA</a></h4>
             <div>
                 <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-                    <li className='ml-10 text-sm uppercase hover:border-b'>
+                    <li className='ml-10 text-sm uppercase hover:border-b border-b-black'>
                     <a href="/#main">Home</a>
                     </li>
-                    <li className='ml-10 text-sm uppercase hover:border-b'>
+                    <li className='ml-10 text-sm uppercase hover:border-b border-b-black'>
                         <a href="/#about">About</a>
                     </li>
-                    <li className='ml-10 text-sm uppercase hover:border-b'>
+                    <li className='ml-10 text-sm uppercase hover:border-b border-b-black'>
                     <a href="/#projects">Projects</a>
                     </li>
-                    <li className='ml-10 text-sm uppercase hover:border-b'>
-                    <a href="/">Contact</a>
+                    <li className='ml-10 text-sm uppercase hover:border-b border-b-black'>
+                    <a href="/#contact">Contact</a>
                     </li>
                 </ul>
                 <div style={{ color: `${linkColor}` }} onClick={handleNav} className='md:hidden cursor-pointer'>
@@ -71,7 +71,7 @@ const Navbar = () =>{
                                 <a href="/#projects">Projects</a>
                                 </li>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                <a href="/">Contact</a>
+                                <a href="/#contact">Contact</a>
                                 </li>
                             </ul>
                             <div className="pt-40">
