@@ -9,6 +9,9 @@ import SkillImg7 from './assets/skills/tailwind.png';
 import SkillImg8 from './assets/skills/git.png';
 import SkillImg9 from './assets/skills/github1.png';
 
+import pidogs1 from './assets/projects/pidogs1.png';
+import mangacoffee1 from './assets/projects/mangacoffee1.png';
+
 
 export const skills = [
     {
@@ -38,4 +41,30 @@ export const skills = [
     {
         image: SkillImg9,
     },
+];
+
+
+export const btns = [
+    { id: 1, name: "All", value: "all" },
+    { id: 2, name: "Web Design", value: "web design" },
+    { id: 3, name: "Web & Movile", value: "web & movile" },
+];
+
+export const projects = [
+    {
+        id: 1,
+        image: pidogs1,
+        value: "web design",
+        link: "https://pi-dogs-theta-beige.vercel.app/",
+        githublink: "https://github.com/rochialbani/PI-Dogs",
+    },
+    {
+        id: 2,
+        image: mangacoffee1,
+        value: "web & movile",
+        link: "https://manga-coffee.vercel.app/",
+        githublink: "https://github.com/rochialbani/MANGA-COFFEE",
+
+    },
+    
 ];
