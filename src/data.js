@@ -75,7 +75,7 @@ export const projects = [
         id: 3,
         image: portfolio1,
         value: "web & movile",
-        link: "",
+        link: "https://portfolio-rochialbani.vercel.app/",
         githublink: "https://github.com/rochialbani/portfolio",
         title: "PORTFOLIO ",
         skills: "[Javascript, React, Tailwind Css, Framer Motion]"
