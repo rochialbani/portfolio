@@ -11,6 +11,7 @@ import SkillImg9 from './assets/skills/github1.png';
 
 import pidogs1 from './assets/projects/pidogs1.png';
 import mangacoffee1 from './assets/projects/mangacoffee1.png';
+import portfolio1 from './assets/projects/portfolio1.png'
 
 
 export const skills = [
@@ -57,6 +58,9 @@ export const projects = [
         value: "web design",
         link: "https://pi-dogs-theta-beige.vercel.app/",
         githublink: "https://github.com/rochialbani/PI-Dogs",
+        title: "DOGS API ",
+        skills: "[Javascript, React, Css, etc]"
+
     },
     {
         id: 2,
@@ -64,7 +68,17 @@ export const projects = [
         value: "web & movile",
         link: "https://manga-coffee.vercel.app/",
         githublink: "https://github.com/rochialbani/MANGA-COFFEE",
-
+        title: "MANGA COFFEE ",
+        skills: "[Typescript, React, Redux Toolkit, Sass]"
+    },
+    {
+        id: 3,
+        image: portfolio1,
+        value: "web & movile",
+        link: "",
+        githublink: "https://github.com/rochialbani/portfolio",
+        title: "PORTFOLIO ",
+        skills: "[Javascript, React, Tailwind Css, Framer Motion]"
     },
     
 ];

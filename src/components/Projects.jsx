@@ -23,7 +23,7 @@ const Projects = () => {
     //"grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-3 justify-center"
 
     return (
-        <div id="projects" className="w-full md:h-screen p-2 flex items-center py-16">
+        <section id="projects" className="w-full md:h-screen p-2 flex items-center py-16">
             <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
             <div className="col-span-2">
                 <p className="uppercase text-xl tracking-widest text-[#9e8d75]">Projects</p>
@@ -40,7 +40,7 @@ const Projects = () => {
                 </div>
             <AnimatePresence>
                 
-                <motion.div className='grid md:grid-cols-2 gap-8 mt-12'>
+                <motion.div className='grid md:grid-cols-3 gap-8 mt-12'>
                     {filterImages && filterImages.map((filterImage) => {
                         return (
                             <motion.div
@@ -51,7 +51,9 @@ const Projects = () => {
                                 key={filterImage.id}
                             >
                                 <motion.img src={filterImage.image} alt="" />
-                                <motion.div className="mt-4 flex font-bold  gap-8 justify-center">
+                                    <div className="mt-2 flex font-bold  gap-8 justify-center">{filterImage.title}</div>
+                                    <div className="mt-1 flex font-bold  text-[#464039] gap-8 justify-center">{filterImage.skills}</div>
+                                <motion.div className="mt-3 flex font-bold  gap-8 justify-center">
                                     
                                 <a href={filterImage.link}  target="_blank" rel="noopener noreferrer">    
                                     <FaLink />
@@ -67,7 +69,7 @@ const Projects = () => {
             </AnimatePresence>
             </div>
             </div>
-        </div>
+        </section>
     );
 };
 
