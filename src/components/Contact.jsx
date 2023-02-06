@@ -1,16 +1,10 @@
-import React, {useState}from "react";
+import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import {AiOutlineMail} from 'react-icons/ai';
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
     const { register, trigger, formState: { errors },} = useForm();
-    const [input, setInput] = useState({
-        name: '',
-        email: '',
-        message: ''    
-    })
 
     const onSubmit = async (e) => {
         const isValid = await trigger();
