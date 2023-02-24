@@ -4,15 +4,23 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
-    const { register, trigger, formState: { errors },} = useForm();
+    const { register, trigger, reset, formState: { errors },} = useForm({
+        defaultValues:{ 
+            name: "",
+            email: "",
+            message: ""}
+        });
 
     const onSubmit = async (e) => {
         const isValid = await trigger();
         if (!isValid) {
             e.preventDefault();
-        }
-        
+            
+        } 
+        reset()
     };
+
+    
 
 
     return (
@@ -75,7 +83,7 @@ const Contact = () => {
                                     {errors.message.type === "maxLength" && "Max length is 2000 char."}
                                 </p>
                             )}
-                        <button type= "submit" className='btn mb-[1px] mx-auto lg:mx-0  h-[80px] uppercase text-xl tracking-widest text-[#464039] flex justify-center items-center'>
+                        <button type="submit" className='btn mb-[1px] mx-auto lg:mx-0  h-[80px] uppercase text-xl tracking-widest text-[#464039] flex justify-center items-center'>
                         Send it
                         </button>
                     </form>
