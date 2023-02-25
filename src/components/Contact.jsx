@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useForm } from "react-hook-form";
 
-const Contact = () => {
+const Contact = (props) => {
     const { register, trigger, reset, formState: { errors },} = useForm({
         defaultValues:{ 
             name: "",
@@ -11,13 +11,12 @@ const Contact = () => {
             message: ""}
         });
 
-    const onSubmit = async (e) => {
-        const isValid = await trigger();
+    const onSubmit = (e) => {
+        const isValid = trigger();
         if (!isValid) {
             e.preventDefault();
             
         } 
-        reset()
     };
 
     
