@@ -17,30 +17,39 @@ import portfolio1 from './assets/projects/portfolio1.png'
 export const skills = [
     {
         image: SkillImg1,
+        name: "HTML",
     },
     {
         image: SkillImg2,
+        name: "CSS",
     },
     {
         image: SkillImg3,
+        name: "JavaScript"
     },
     {
         image: SkillImg4,
+        name: " TypeScript",
     },
     {
         image: SkillImg5,
+        name: "React.js",
     },
     {
         image: SkillImg6,
+        name: "Redux - Redux Toolkit",
     },
     {
         image: SkillImg7,
+        name: "Tailwind Css",
     },
     {
         image: SkillImg8,
+        name: "Git",
     },
     {
         image: SkillImg9,
+        name: "GitHub",
     },
 ];
 
