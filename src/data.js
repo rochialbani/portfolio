@@ -14,6 +14,8 @@ import mangacoffee1 from './assets/projects/mangacoffee1.png';
 import portfolio1 from './assets/projects/portfolio1.png'
 
 
+
+
 export const skills = [
     {
         image: SkillImg1,
@@ -29,7 +31,7 @@ export const skills = [
     },
     {
         image: SkillImg4,
-        name: " TypeScript",
+        name: "TypeScript",
     },
     {
         image: SkillImg5,
@@ -37,7 +39,7 @@ export const skills = [
     },
     {
         image: SkillImg6,
-        name: "Redux - Redux Toolkit",
+        name: "Redux",
     },
     {
         image: SkillImg7,
@@ -51,6 +53,7 @@ export const skills = [
         image: SkillImg9,
         name: "GitHub",
     },
+   
 ];
 
 
@@ -68,7 +71,7 @@ export const projects = [
         link: "https://pi-dogs-theta-beige.vercel.app/",
         githublink: "https://github.com/rochialbani/PI-Dogs",
         title: "DOGS API ",
-        skills: "[Javascript, React, Css, etc]"
+        skills: "[Javascript, React, Css, etc]",
 
     },
     {
