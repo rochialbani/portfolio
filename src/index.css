@@ -10,7 +10,7 @@ html {
 
 @layer base {
     body {
-      @apply bg-[#ffebc2] text-[#010203] tracking-wide
+      @apply bg-[#ffebc2] text-[#010203] tracking-wide  scrollbar-thin scrollbar-thumb-[#9e8d75] scrollbar-thumb-rounded-full 
     }
 
     h1, h2, h3, h4, h5, h6 {
