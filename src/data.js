@@ -71,7 +71,7 @@ export const projects = [
         link: "https://pi-dogs-theta-beige.vercel.app/",
         githublink: "https://github.com/rochialbani/PI-Dogs",
         title: "DOGS API ",
-        skills: "[Javascript, React, Css, etc]",
+        skills: "[Javascript, React, Css, Express, PostgreSQL, Sequelize, Node.js]",
 
     },
     {
