@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { btns, projects } from "../data";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaLink } from 'react-icons/fa';
+import Modal from "./Modal";
 
 const Projects = () => {
     const [filterImages, setFilterImages] = useState(null);
+    const [showModal, setShowModal] = useState(false)
 
     useEffect(() => {
         setFilterImages(projects);
@@ -18,6 +20,10 @@ const Projects = () => {
         btnType !== "all"
         ? setFilterImages(newFilterImages)
         : setFilterImages(projects);
+    };
+
+    const handleOnClose = () => {
+        setShowModal(false)
     };
 
     //"grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-3 justify-center"
@@ -50,7 +56,9 @@ const Projects = () => {
                                 exit={{ opacity: 0, transition: { duration: 0.3 } }}
                                 key={filterImage.id}
                             >
-                                <motion.img src={filterImage.image} alt="" />
+                                <button onClick={() => setShowModal(true)}>
+                                <motion.img className=' h-full w-full' src={filterImage.image} alt="" />
+                                </button>{ /*PONER UN CLASSNAME A LA IMG PARA PONERLES ESTILOS A TODAS JUNTAS Y ACOMODARLAS */}
                                     <div className="mt-2 flex font-bold  gap-8 justify-center">{filterImage.title}</div>
                                     <div className="mt-1 flex font-bold  text-[#464039] gap-8 justify-center">{filterImage.skills}</div>
                                 <motion.div className="mt-3 flex font-bold  gap-8 justify-center">
@@ -67,6 +75,7 @@ const Projects = () => {
                     })}
                 </motion.div>
             </AnimatePresence>
+            <Modal onClose={handleOnClose} visible={showModal}/>
             </div>
             </div>
         </section>

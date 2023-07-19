@@ -12,8 +12,8 @@ import SkillImg9 from './assets/skills/github1.png';
 import pidogs1 from './assets/projects/pidogs1.png';
 import mangacoffee1 from './assets/projects/mangacoffee1.png';
 import portfolio1 from './assets/projects/portfolio1.png'
-
-
+import tictactoe1 from './assets/projects/tictactoe1.png'
+import moviesearch1 from './assets/projects/moviesearch1.png'
 
 
 export const skills = [
@@ -66,25 +66,44 @@ export const btns = [
 export const projects = [
     {
         id: 1,
-        image: pidogs1,
+        image: moviesearch1,
         value: "web design",
-        link: "https://pi-dogs-theta-beige.vercel.app/",
-        githublink: "https://github.com/rochialbani/PI-Dogs",
-        title: "DOGS API ",
-        skills: "[Javascript, React, Css, Express, PostgreSQL, Sequelize, Node.js]",
+        link: "https://movies-search-two.vercel.app/",
+        githublink: "https://github.com/rochialbani/movies-search",
+        title: "MOVIES SEARCH ",
+        skills: "[JavaScript, React, Talwind Css]",
 
     },
     {
         id: 2,
+        image: tictactoe1,
+        value: "web & movile",
+        link: "https://tic-tac-toe-rochialbani.vercel.app/",
+        githublink: "https://github.com/rochialbani/Tic-Tac-Toe",
+        title: "TIC TAC TOE ",
+        skills: "[JavaScript, React, CSS]"
+    },
+    {
+        id: 3,
+        image: pidogs1,
+        value: "web design",
+        //link: "https://pi-dogs-theta-beige.vercel.app/",
+        githublink: "https://github.com/rochialbani/PI-Dogs",
+        title: "DOGS API ",
+        skills: "[Javascript, React, Redux, Css, Express, PostgreSQL, Sequelize, Node.js]",
+
+    },
+    {
+        id: 4,
         image: mangacoffee1,
         value: "web & movile",
-        link: "https://manga-coffee.vercel.app/",
+        //link: "https://manga-coffee.vercel.app/",
         githublink: "https://github.com/rochialbani/MANGA-COFFEE",
         title: "MANGA COFFEE ",
         skills: "[Typescript, React, Redux Toolkit, Sass]"
     },
     {
-        id: 3,
+        id: 5,
         image: portfolio1,
         value: "web & movile",
         link: "https://portfolio-rochialbani.vercel.app/",
