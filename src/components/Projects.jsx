@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { btns, projects } from "../data";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaLink } from 'react-icons/fa';
-import Modal from "./Modal";
+
 
 const Projects = () => {
     const [filterImages, setFilterImages] = useState(null);
