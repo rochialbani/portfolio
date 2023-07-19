@@ -6,7 +6,6 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 
 const Projects = () => {
     const [filterImages, setFilterImages] = useState(null);
-    const [showModal, setShowModal] = useState(false)
 
     useEffect(() => {
         setFilterImages(projects);
@@ -22,14 +21,12 @@ const Projects = () => {
         : setFilterImages(projects);
     };
 
-    const handleOnClose = () => {
-        setShowModal(false)
-    };
+   
 
     //"grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-3 justify-center"
 
     return (
-        <section id="projects" className="w-full md:h-screen p-2 flex items-center py-16">
+        <section id="projects" className="w-full p-2 flex items-center py-16">
             <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
             <div className="col-span-2">
                 <p className="uppercase text-xl tracking-widest text-[#9e8d75]">Projects</p>
@@ -56,9 +53,9 @@ const Projects = () => {
                                 exit={{ opacity: 0, transition: { duration: 0.3 } }}
                                 key={filterImage.id}
                             >
-                                <button onClick={() => setShowModal(true)}>
-                                <motion.img className=' h-full w-full' src={filterImage.image} alt="" />
-                                </button>{ /*PONER UN CLASSNAME A LA IMG PARA PONERLES ESTILOS A TODAS JUNTAS Y ACOMODARLAS */}
+                                <button>
+                                <motion.img className='h-60 w-full' src={filterImage.image} alt="" />
+                                </button>
                                     <div className="mt-2 flex font-bold  gap-8 justify-center">{filterImage.title}</div>
                                     <div className="mt-1 flex font-bold  text-[#464039] gap-8 justify-center">{filterImage.skills}</div>
                                 <motion.div className="mt-3 flex font-bold  gap-8 justify-center">
@@ -75,7 +72,6 @@ const Projects = () => {
                     })}
                 </motion.div>
             </AnimatePresence>
-            <Modal onClose={handleOnClose} visible={showModal}/>
             </div>
             </div>
         </section>
