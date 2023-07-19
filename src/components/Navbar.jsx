@@ -78,7 +78,7 @@ const Navbar = () =>{
                                 <p className="uppercase tracking-widest text-[#9e8d75]">Let's Connect</p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                        <a href="https://www.linkedin.com/in/roc%C3%ADo-albani/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
+                                        <a href="https://www.linkedin.com/in/rocio-albani/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                                     </div>
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <a href="https://github.com/rochialbani" target="_blank" rel="noreferrer"><FaGithub /></a>

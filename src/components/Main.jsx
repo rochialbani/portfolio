@@ -15,7 +15,7 @@ const Main = () => {
                     who's constantly learning new things. Currently based in Buenos Aires, Argentina.</p>
                         <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                <a href="https://www.linkedin.com/in/roc%C3%ADo-albani/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
+                                <a href="https://www.linkedin.com/in/rocio-albani/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                             </div>
                             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                 <a href="https://github.com/rochialbani" target="_blank" rel="noreferrer"><FaGithub /></a>
