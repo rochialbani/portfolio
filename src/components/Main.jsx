@@ -1,6 +1,5 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
 
 const Main = () => {
@@ -23,7 +22,7 @@ const Main = () => {
                             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                 <a href="/#contact"><AiOutlineMail /></a></div>
                             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 font-bold">
-                            <a href="./CV-Rocio-Albani.pdf" download>CV</a>
+                            <a href="./CV-Rocío-Albani.pdf" download>CV</a>
                             </div>
                         </div>
                 </div>

@@ -14,6 +14,7 @@ import mangacoffee1 from './assets/projects/mangacoffee1.png';
 import portfolio1 from './assets/projects/portfolio1.png'
 import tictactoe1 from './assets/projects/tictactoe1.png'
 import moviesearch1 from './assets/projects/moviesearch1.png'
+import shoppingcart1 from './assets/projects/shoppingcart1.png'
 
 
 export const skills = [
@@ -66,6 +67,15 @@ export const btns = [
 export const projects = [
     {
         id: 1,
+        image: shoppingcart1,
+        value: "web & movile",
+        link: "https://shopping-cart-pied-eight.vercel.app/",
+        githublink: "https://github.com/rochialbani/shopping-cart",
+        title: "SHOPPING CART ",
+        skills: "[JavaScript, React, CSS]"
+    },
+    {
+        id: 2,
         image: moviesearch1,
         value: "web design",
         link: "https://movies-search-two.vercel.app/",
@@ -75,7 +85,7 @@ export const projects = [
 
     },
     {
-        id: 2,
+        id: 3,
         image: tictactoe1,
         value: "web & movile",
         link: "https://tic-tac-toe-rochialbani.vercel.app/",
@@ -84,7 +94,7 @@ export const projects = [
         skills: "[JavaScript, React, CSS]"
     },
     {
-        id: 3,
+        id: 4,
         image: pidogs1,
         value: "web design",
         //link: "https://pi-dogs-theta-beige.vercel.app/",
@@ -94,7 +104,7 @@ export const projects = [
 
     },
     {
-        id: 4,
+        id: 5,
         image: mangacoffee1,
         value: "web & movile",
         //link: "https://manga-coffee.vercel.app/",
@@ -103,7 +113,7 @@ export const projects = [
         skills: "[Typescript, React, Redux Toolkit, Sass]"
     },
     {
-        id: 5,
+        id: 6,
         image: portfolio1,
         value: "web & movile",
         link: "https://portfolio-rochialbani.vercel.app/",
